@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM Project</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        i {
+            font-size: 21px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: red;
+        }
+        
+        h3 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-success">
+            <div class="col d-flex p-2">
+                <h3>All Items</h3>
+                <input type="text" placeholder="Search for Item" id="search" class="col-md-4 ml-auto form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col my-2 d-flex">
+                <input type="text" placeholder="Enter your text......" id="input" class="form-control">
+                <button class="btn btn-success ml-2" id="addBtn"><i class="fas fa-plus-circle"></i>
+               </button>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col" id="task"></div>
+        </div>
+        <div class="msg"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
